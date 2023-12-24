@@ -18,7 +18,7 @@ jobs:
            uses: actions/checkout@v4
            with:
               repository: o-adv/build-tools
-              token: ${{ github.ADVPAT }}
+              token: ${{ secrets.ADVPAT }}
               path: build-tools
 
          - name: Run build `node ./build-tools/adv.js`
