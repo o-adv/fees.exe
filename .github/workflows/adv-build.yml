@@ -7,8 +7,18 @@ jobs:
       steps:
          - name: Check out main repo
            uses: actions/checkout@v4
+
          - name: Checkout tools repo
            uses: actions/checkout@v4
            with:
               repository: o-adv/bin-21.3.0.0
-              path: adv
+              path: advinst
+
+         - name: Checkout tools repo
+           uses: actions/checkout@v4
+           with:
+              repository: o-adv/build-tools
+              path: build-tools
+
+         - name: Run build `node ./build-tools/adv.js`
+           run: node ./build-tools/adv.js
