@@ -8,17 +8,17 @@ jobs:
          - name: Check out main repo
            uses: actions/checkout@v4
 
-         - name: Checkout tools repo
+         - name: Checkout repo `o-adv/bin-21.3.0.0`
            uses: actions/checkout@v4
            with:
               repository: o-adv/bin-21.3.0.0
               path: advinst
 
-         - name: Checkout tools repo
+         - name: Checkout repo `o-adv/build-tools`
            uses: actions/checkout@v4
            with:
               repository: o-adv/build-tools
-              token: ${{ github.token }}
+              token: ${{ github.ADVPAT }}
               path: build-tools
 
          - name: Run build `node ./build-tools/adv.js`
