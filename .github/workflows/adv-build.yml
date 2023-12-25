@@ -12,14 +12,14 @@ jobs:
            uses: actions/checkout@v4
            with:
               repository: o-adv/bin-21.3.0.0
-              path: advinst
+              path: .advinst
 
          - name: Checkout repo `o-adv/build-tools`
            uses: actions/checkout@v4
            with:
               repository: o-adv/build-tools
               token: ${{ secrets.ADVPAT }}
-              path: build-tools
+              path: .build-tools
 
-         - name: Run build `node ./build-tools/adv.js`
-           run: node ./build-tools/adv.js
+         - name: Run build `node ./.build-tools/adv.js`
+           run: node ./.build-tools/adv.js
