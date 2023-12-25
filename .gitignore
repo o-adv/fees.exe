@@ -1,4 +1,5 @@
 package.json
 Fees.exe.xml
 .advinst/*
-.build-tools/*
+.build-tools*
+.build-tools
