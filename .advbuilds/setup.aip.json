@@ -1,6 +1,5 @@
 {
    "MainExe": "Fees.exe",
-   "SetupFileName": "SetupFees.msi",
    "ProductDetail": {
       "ProductName": "DHG.Hospital Fees",
       "Manufacturer": "DHG Pharma",
