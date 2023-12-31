@@ -1,0 +1,15 @@
+22/09/2022 03:02:43: 
+Error [0]Message: Could not load file or assembly 'QRCoder, Version=1.4.2.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28' or one of its dependencies. The system cannot find the file specified.
+Error [0]HResult: -2147024894
+Error [0]Source: OTH.PAY.ViettinBank.QRCode
+Error [0]StackTrace:    at OTH.PAY.ViettinBank.QRCode.GenQR.GenQRImage(String qrData)
+   at OTH.PAY.ViettinBank.QRCode.GenQR.createQRAll(String mabn, String hotenbenhnhan, Decimal settlementAmount, List`1 thuchis, List`1 chidinhclss, List`1 chungtus, List`1 pshdxns, String terminalName, String desc)
+   at OTH.PAY.ViettinBank.Admin.XControlBussinessFlows.SetPanInfo(String mabn, String hotenbenhnhan, Decimal settlementAmount, String phonenumber, String identifycardno, List`1 thuchis, List`1 chidinhclss, List`1 chungtus, List`1 pshdxns, Form ownerForm)
+   at HosFees.FormsV2.FrmCPhiBenhNhan.ShowViettinBank(Control ownerControl, Int64 thucthuc, List`1 thuchis)
+   at HosFees.FormsV2.FrmCPhiBenhNhan.<InitializeViettinBank>b__25_1(Object sender, ButtonPressedEventArgs e)
+Error [0]TargetSite: System.Drawing.Image GenQRImage(System.String)
+
+Fees.exe
+Fees.exe
+3.22.922.10
+
